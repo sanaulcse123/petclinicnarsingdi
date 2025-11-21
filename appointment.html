@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment – PetMed Vet Clinic</title>
+    <link rel="stylesheet" href="style.css">
 
+    <style>
+        .form-container {
+            background:white;
+            padding:25px;
+            border-radius:8px;
+            max-width:500px;
+            margin:auto;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+        input, textarea {
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border-radius:5px;
+            border:1px solid #ccc;
+        }
+        button {
+            background:#1b5e20;
+            color:white;
+            padding:12px;
+            width:100%;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg" alt="Clinic Logo">
+    <h2>Appointment Form</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="our-services.html">Our Service</a>
+    <a href="our-vision.html">Our Vision</a>
+    <a href="about.html">About</a>
+    <a href="upcoming-services.html">Upcoming Service</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<h2>Book an Appointment</h2>
+
+<div class="form-container">
+
+<form action="https://formsubmit.co/petclinicnarsingdi@gmail.com" method="POST">
+
+    <!-- Redirect to success page -->
+    <input type="hidden" name="_next" value="https://petclinicnarsingdi.com/appointment-success.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label>Cat Name</label>
+    <input type="text" name="cat_name" required>
+
+    <label>Client Name</label>
+    <input type="text" name="client_name" required>
+
+    <label>Date</label>
+    <input type="date" name="date" required>
+
+    <label>Time</label>
+    <input type="time" name="time" required>
+
+    <label>Phone Number</label>
+    <input type="text" name="phone" required>
+
+    <label>Email (Optional)</label>
+    <input type="email" name="email">
+
+    <label>Reason for Visit</label>
+    <textarea name="reason" rows="4" required></textarea>
+
+    <button type="submit">Submit Appointment Request</button>
+
+</form>
+
+</div>
+</div>
+
+<div class="footer">
+    © 2025 PetMed Vet Clinic
+</div>
+
+</body>
+</html>
